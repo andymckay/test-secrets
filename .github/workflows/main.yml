@@ -15,4 +15,4 @@ jobs:
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - name: Show env
-        run: cat ~/.vercel/.env.production.local
+        run: cat ~/test-secrets/.vercel/.env.production.local
